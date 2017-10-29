@@ -7,5 +7,5 @@ class BandeirinhaCirculo(Bandeirinha):
     def desenha(self):
         Bandeirinha.desenha(self)
         fill(0)
-        rect(self.x - self.tamanho / 8, self.y - self.tamanho / 8, self.tamanho / 4, self.tamanho / 4)
+        ellipse(self.x, self.y, self.tamanho / 4, self.tamanho / 4)
         
