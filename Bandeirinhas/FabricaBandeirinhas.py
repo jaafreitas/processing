@@ -1,3 +1,5 @@
+#-*- coding: latin-1 -*-
+
 from BandeirinhaQuadrado import BandeirinhaQuadrado 
 from BandeirinhaCirculo import BandeirinhaCirculo
 

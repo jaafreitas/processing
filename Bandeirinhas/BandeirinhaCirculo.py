@@ -1,3 +1,5 @@
+#-*- coding: latin-1 -*-
+
 from Bandeirinha import Bandeirinha
 
 class BandeirinhaCirculo(Bandeirinha):
