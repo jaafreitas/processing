@@ -1,6 +1,6 @@
 #-*- coding: latin-1 -*-
 
-class Bandeirinha():
+class Bandeirinha(object):
     """ Classe Bandeirinha, cor sorteada, velocidade sorteada """
 
     def __init__(self, px, py, ptamanho=None):
