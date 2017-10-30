@@ -1,8 +1,17 @@
 from Bandeirinha import Bandeirinha
 
 class BandeirinhaQuadrado(Bandeirinha):
+    def __init__(self, px, py, ptamanho=None):
+        super(BandeirinhaQuadrado, self).__init__(px, py, ptamanho) # note que com super() no método não vai self
+        self.cor_quadrado = color(random(256),
+                                  random(256),
+                                  random(256)) 
+                
     def desenha(self):
-        Bandeirinha.desenha(self)
-        fill(255)
-        rect(self.x - self.tamanho / 8, self.y - self.tamanho / 8, self.tamanho / 4, self.tamanho / 4)
+        super(BandeirinhaQuadrado, self).desenha() 
+        fill(self.cor_quadrado)
+        rect(self.x - self.tamanho / 8,
+             self.y - self.tamanho / 8,
+             self.tamanho / 4,
+             self.tamanho / 4)
         
